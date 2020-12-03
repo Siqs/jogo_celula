@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | jogo_celula</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1400px; height: 695px; background: #231F20"></canvas>
+    <script src="Build/jogo2.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/jogo2.data",
+        frameworkUrl: "Build/jogo2.framework.js",
+        codeUrl: "Build/jogo2.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "jogo_celula",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
